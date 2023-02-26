@@ -8,7 +8,7 @@ export const fetchLast = createAsyncThunk(
     async({},{ getState })=>{
         try{
 
-            const response = await axios.get(`${apiUrl}`,{ withCredentials: true });
+            const response = await axios.get(`${apiUrl}`);
 
             return {
                 items: [response.data.recenttracks.track]
