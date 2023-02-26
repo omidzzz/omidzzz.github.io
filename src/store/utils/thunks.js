@@ -8,7 +8,7 @@ export const fetchLast = createAsyncThunk(
     async({},{ getState })=>{
         try{
 
-            const response = await axios.get(`${apiUrl}`);
+            const response = await axios.get(`https://cors-anywhere.herokuapp.com/${apiUrl}`);
 
             return {
                 items: [response.data.recenttracks.track]
