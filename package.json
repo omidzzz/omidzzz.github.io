@@ -74,7 +74,7 @@
       "react-app/jest"
     ]
   },
-  "proxy": "http://localhost:3001",
+  "proxy": "https://lemonade-p9qr.onrender.com",
   "browserslist": {
     "production": [
       ">0.2%",
