@@ -33,17 +33,58 @@ body {
 
 .bodyContainer {
     height: 92vh;
-    margin: 3vh 3vw 0;
+    margin: 3vh 3vw;
     background-color: transparent;
     border: 0.35vw solid rgba(255, 223, 61, 0.673);
     border-radius: 20px;
     position: relative;
 }
 
-.topBar {
+.topB {
     height: 15vh;
     background-color: rgba(88, 88, 88, 0.8);
     margin: 2vh 2vw 0;
+    border-radius: 10px;
+    position: relative;
+}
+
+.navB {
+    background-color: #FCC52F;
+    width: 98%;
+    height: 13vh;
+    border-radius: 10px;
+
+    margin: 0 auto;
+    position: relative;
+    top: 1vh;
+}
+
+.logoNC{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+}
+
+.woundedN {
+    height: 60%;
+    aspect-ratio: 1;
+    border-radius: 15% 50% !important;
+    background-color: rgb(25%, 88%, 99%);
+    position: relative;
+    transform: translate(-50%, -50%);
+    animation: first 10s linear 0s infinite reverse;
+}
+
+.leftNav{
+    width: 40%;
+    height: 90%;
+    float: left;
+    position: relative;
+    top:5%;
+    border: 1px solid grey;
     border-radius: 10px;
 }
 
