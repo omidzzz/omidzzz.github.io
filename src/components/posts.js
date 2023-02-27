@@ -25,20 +25,12 @@ const Posts = () => {
     }, [])
 
     const getPosts = () => {
-        axios.get('/api/getposts')
+        axios.get('https://lemonade-p9qr.onrender.com/api/getposts')
             .then(response => {
                 setPosts(response.data)
             })
     }
 
-    const handleClick = (url, filename) => {
-        axios.get(url, {
-            responseType: 'blob',
-        })
-            .then((res) => {
-                fileDownload(res.data, filename)
-            })
-    }
 
     return (
         <>
