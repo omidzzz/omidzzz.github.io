@@ -1,11 +1,9 @@
 import { useSelector, useDispatch } from 'react-redux'
 import { useEffect, useState } from 'react';
 
-import fileDownload from 'js-file-download'
 
 import { fetchLast } from '../store/utils/thunks'
 import axios from 'axios';
-import { Button, ListGroup, ListGroupItem } from 'react-bootstrap'
 
 import '../style/style.css'
 
@@ -25,8 +23,9 @@ const Posts = () => {
     }, [])
 
     const getPosts = () => {
-        fetch('https://lemonade-p9qr.onrender.com/api/getposts')
+        axios.get('/api/getposts')
             .then(response => {
+                console.log(response)
                 setPosts(response.data)
             })
     }
