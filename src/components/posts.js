@@ -40,7 +40,7 @@ const Posts = () => {
         axios.get('https://lemonade-p9qr.onrender.com/api/last')
             .then(response => {
                 console.log(response)
-                setLasts(response.data.recenttracks.track)
+                setLasts(response.recenttracks)
             })
     }
 
