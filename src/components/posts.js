@@ -25,7 +25,7 @@ const Posts = () => {
     }, [])
 
     const getPosts = () => {
-        axios.get('https://lemonade-p9qr.onrender.com/api/getposts')
+        fetch('https://lemonade-p9qr.onrender.com/api/getposts')
             .then(response => {
                 setPosts(response.data)
             })
