@@ -8,14 +8,14 @@ import axios from 'axios';
 import '../style/style.css'
 
 const Posts = () => {
-    const lastItems = useSelector((state) => state.last)
-    const dispatch = useDispatch();
-    const lastI = lastItems.entries.items[0]
+// `    const lastItems = useSelector((state) => state.last)
+//     const dispatch = useDispatch();
+//     const lastI = lastItems.entries.items[0]
 
-    useEffect(() => {
-        dispatch(fetchLast({}))
-    }, [])
-
+//     useEffect(() => {
+//         dispatch(fetchLast({}))
+//     }, [])
+// `
     let [posts, setPosts] = useState([]);
 
     useEffect(() => {
@@ -29,21 +29,6 @@ const Posts = () => {
                 setPosts(response.data)
             })
     }
-
-    let [lasts, setLasts] = useState([]);
-
-    useEffect(() => {
-        getLasts();
-    }, [])
-
-    const getLasts = () => {
-        axios.get('https://lemonade-p9qr.onrender.com/api/last')
-            .then(response => {
-                console.log(response)
-                setLasts(response.recenttracks)
-            })
-    }
-
 
     return (
         <>
@@ -73,7 +58,7 @@ const Posts = () => {
                         <span className='postMarg postT col-sm-4'>Artist</span>
                         <span className='col-sm-4 postT ms-auto'>Track</span>
                     </div>
-                    {lastI ?
+                    {/* {lastI ?
                         lasts.map((item, i) => (
                             <div className=' container hstack m-2' variant='danger' key={i}>
                                 <img
@@ -84,7 +69,7 @@ const Posts = () => {
                                 <span className='postT col-sm-4 ms-auto'> {item.name}</span>
                             </div>
                         ))
-                        : null}
+                        : null} */}
 
                 </div>
             </div>
