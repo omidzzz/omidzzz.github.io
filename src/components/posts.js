@@ -30,6 +30,20 @@ const Posts = () => {
             })
     }
 
+    let [lasts, setLasts] = useState([]);
+
+    useEffect(() => {
+        getLasts();
+    }, [])
+
+    const getLasts = () => {
+        axios.get('https://lemonade-p9qr.onrender.com/api/last')
+            .then(response => {
+                console.log(response)
+                setLasts(response.data.recenttracks.track)
+            })
+    }
+
 
     return (
         <>
@@ -60,7 +74,7 @@ const Posts = () => {
                         <span className='col-sm-4 postT ms-auto'>Track</span>
                     </div>
                     {lastI ?
-                        lastI.map((item, i) => (
+                        lasts.map((item, i) => (
                             <div className=' container hstack m-2' variant='danger' key={i}>
                                 <img
                                     className='col-sm-2'
