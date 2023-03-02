@@ -9,7 +9,7 @@ const App = () => {
 
     return (
         <BrowserRouter>
-            <Home/>
+            <Router/>
         </BrowserRouter>
     )
 }
