@@ -9,7 +9,7 @@ const Music = () => {
     },[])
 
     const getPosts = () => {
-        axios.get('/api/getposts')
+        axios.get('https://lemonade-p9qr.onrender.com/api/getposts')
         .then(response => {
             setPosts(response.data)
         })
