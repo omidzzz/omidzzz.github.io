@@ -71,7 +71,7 @@ const Posts = () => {
                         <span className='col-sm-4 postT ms-auto'>Track</span>
                     </div>
                     {last ?
-                        last.map((item, i) => (
+                        last.slice(0,5).map((item, i) => (
                             <div className=' container hstack m-2' variant='danger' key={i}>
                                 <img
                                     className='col-sm-2'
