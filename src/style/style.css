@@ -51,7 +51,7 @@ body {
 }
 
 .bodyContainer {
-    height: 88vh;
+    height: 80vh;
     margin: 3vh 3vw;
     background-color: transparent;
     border: 0.35vw solid rgba(255, 223, 61, 0.673);
