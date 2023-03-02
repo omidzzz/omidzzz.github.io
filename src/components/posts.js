@@ -1,21 +1,20 @@
-import { useSelector, useDispatch } from 'react-redux'
 import { useEffect, useState } from 'react';
 
 
-import { fetchLast } from '../store/utils/thunks'
 import axios from 'axios';
 
 import '../style/style.css'
 
-const Posts = () => {
-// `    const lastItems = useSelector((state) => state.last)
-//     const dispatch = useDispatch();
-//     const lastI = lastItems.entries.items[0]
 
-//     useEffect(() => {
-//         dispatch(fetchLast({}))
-//     }, [])
-// `
+const Posts = () => {
+    // const lastItems = useSelector((state) => state.last)
+    // const dispatch = useDispatch();
+    // const lastI = lastItems.entries.items[0]
+
+    // useEffect(() => {
+    //     dispatch(fetchLast({}))
+    // }, [])
+
     let [posts, setPosts] = useState([]);
 
     useEffect(() => {
@@ -23,12 +22,25 @@ const Posts = () => {
     }, [])
 
     const getPosts = () => {
-        axios.get('https://lemonade-p9qr.onrender.com/api/getposts')
+        axios.get('/api/getposts')
             .then(response => {
-                console.log(response)
                 setPosts(response.data)
             })
     }
+
+    let [last, setLast] = useState([]);
+
+    useEffect(() => {
+        getLast();
+    }, [])
+
+    const getLast = () => {
+        axios.get('/api/last')
+            .then(response => {
+                setLast(response.data.recenttracks.track)
+            })
+    }
+
 
     return (
         <>
@@ -58,8 +70,8 @@ const Posts = () => {
                         <span className='postMarg postT col-sm-4'>Artist</span>
                         <span className='col-sm-4 postT ms-auto'>Track</span>
                     </div>
-                    {/* {lastI ?
-                        lasts.map((item, i) => (
+                    {last ?
+                        last.map((item, i) => (
                             <div className=' container hstack m-2' variant='danger' key={i}>
                                 <img
                                     className='col-sm-2'
@@ -69,7 +81,7 @@ const Posts = () => {
                                 <span className='postT col-sm-4 ms-auto'> {item.name}</span>
                             </div>
                         ))
-                        : null} */}
+                        : null}
 
                 </div>
             </div>
