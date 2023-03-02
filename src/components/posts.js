@@ -22,7 +22,7 @@ const Posts = () => {
     }, [])
 
     const getPosts = () => {
-        axios.get('/api/getposts')
+        axios.get('https://lemonade-p9qr.onrender.com/api/getposts')
             .then(response => {
                 setPosts(response.data)
             })
@@ -35,7 +35,7 @@ const Posts = () => {
     }, [])
 
     const getLast = () => {
-        axios.get('/api/last')
+        axios.get('https://lemonade-p9qr.onrender.com/api/last')
             .then(response => {
                 setLast(response.data.recenttracks.track)
             })
