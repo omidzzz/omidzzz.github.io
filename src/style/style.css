@@ -1,4 +1,4 @@
-@media (max-width:768px){
+@media (max-width:768px) {
     .bodyContainer {
         height: auto !important;
     }
@@ -10,8 +10,17 @@
         margin-bottom: 4vh !important;
 
     }
+
     .musicP img {
         max-width: 10vw !important;
+    }
+
+    .musicInfoContainer {
+        font-size: 2.7vw !important;
+    }
+
+    .logoNC {
+        padding-left: 10%;
     }
 }
 
@@ -59,8 +68,8 @@ body {
     top: 1vh;
 }
 
-.logoNC{
-    width: 15%;
+.logoNC {
+    width: 12%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -78,14 +87,41 @@ body {
     animation: first 10s linear 0s infinite reverse;
 }
 
-.leftNav{
-    width: 40%;
-    height: 90%;
+.titleContainer {
     float: left;
+    width: fit-content;
+    height: 90%;
     position: relative;
-    top:5%;
-    border: 1px solid grey;
-    border-radius: 10px;
+    top: 5%;
+}
+
+.title {
+    font-family: 'Lovers Quarrel', cursive;
+    font-size: 55px;
+    font-weight: 900;
+}
+
+.rightNav {
+    width: auto;
+    height: 90%;
+    float: right;
+    position: relative;
+    top: 5%;
+    margin-right: 5%;
+}
+
+.navLink {
+    float: left;
+    margin-top: 12%;
+}
+
+.nav.nav-pills .nav-link {
+
+    color: black;
+}
+
+.nav.nav-pills .nav-link.active {
+    background-color: rgba(88, 88, 88, 0.5);
 }
 
 .rightSection {
@@ -97,7 +133,7 @@ body {
     float: right;
 }
 
-.lastT{
+.lastT {
     font-family: 'Permanent Marker', cursive;
 }
 
@@ -110,8 +146,8 @@ body {
     float: left;
 }
 
-.musicP{
-    
+.musicP {
+
     height: auto;
     background-color: rgb(252, 197, 47, 0.9);
     border-radius: 10px;
@@ -120,11 +156,12 @@ body {
     margin-left: 10%;
 }
 
-.postMarg{
-    margin-left: 5%;;
+.postMarg {
+    margin-left: 5%;
+    ;
 }
 
-.postT{
+.postT {
     font-family: 'Mynerve', cursive;
     font-weight: 700;
 }
@@ -146,7 +183,7 @@ body {
     border-radius: 15% 50% !important;
     background-color: #FFCA2C;
     position: fixed;
-    top:44.5vh;
+    top: 44.5vh;
     transform: translate(-50%, -50%);
     box-shadow: 10px 10px 5px #FCC52F, 10px 10px 5px #FCC52F inset;
     animation: first 10s linear 0s infinite;
@@ -182,4 +219,40 @@ body {
     transform: rotate(45deg);
     margin: 32px;
     position: absolute;
+}
+
+.musicPosts {
+    background-color: rgba(88, 88, 88, 0.8);
+    margin: 2vh 2vw 0;
+    border-radius: 10px;
+}
+
+.musicPostImg {
+    display: block;
+    width: 300px;
+    margin: 4vh auto;
+}
+
+.postTitleContainer {
+    margin: 1vh 0;
+    border-radius: 10px;
+    background-color: rgba(78, 78, 78, 0.8);
+    text-align: center;
+}
+
+.musicPostTitle {
+    font-family: 'Permanent Marker', cursive;
+
+    color: rgb(244, 244, 244);
+}
+
+.musicInfoContainer {
+    margin: 1vh;
+    text-align: center;
+    color: rgb(244, 244, 244);
+    font-size: 20px;
+}
+
+.musicInfo {
+    font-family: 'Mynerve', cursive;
 }

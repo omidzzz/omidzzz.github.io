@@ -13,10 +13,8 @@ const Home = () => {
     return(
 
         <>
-            <Logo/>
 
             <div className='bodyContainer'>
-                <Header/>
                 <Posts/>
             </div>
         </>
