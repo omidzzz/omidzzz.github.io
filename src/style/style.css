@@ -1,10 +1,14 @@
 @media (max-width:420px){
     .titleContainer{
-        top:8% !important;
+        top:10% !important;
     }
     
     .title{
         font-size: 45px !important;
+    }
+
+    .rightNav{
+        top:10% !important;
     }
 }
 
