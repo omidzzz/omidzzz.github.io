@@ -11,8 +11,9 @@
         top:10% !important;
     }
 
-    .navLink{
-        font-size: 10px;
+    .nav.nav-pills .nav-link {
+        font-size: 8px !important;
+        padding: 7px !important;
     }
 
     .woundedN{
