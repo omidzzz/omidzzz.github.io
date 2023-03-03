@@ -10,6 +10,10 @@
     .rightNav{
         top:10% !important;
     }
+
+    .woundedN{
+        height: 50% !important;
+    }
 }
 
 @media (max-width:768px) {
