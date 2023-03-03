@@ -11,6 +11,10 @@
         top:10% !important;
     }
 
+    .navLink{
+        font-size: 10px;
+    }
+
     .woundedN{
         height: 40% !important;
         padding-left: 20% !important;
