@@ -7,11 +7,10 @@
         font-size: 40px !important;
     }
 
-    .rightNav{
-        top:15% !important;
-    }
 
     .nav.nav-pills .nav-link {
+        position: relative;
+        top: 20% !important;
         font-size: 13px !important;
         padding: 7px !important;
     }
