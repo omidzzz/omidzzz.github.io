@@ -216,7 +216,7 @@ body {
     height: 200px;
     border-radius: 15% 50% !important;
     background-color: #FFCA2C;
-    position: sticky;
+    position: fixed;
     top: 44.5vh;
     transform: translate(-50%, -50%);
     box-shadow: 10px 10px 5px #FCC52F, 10px 10px 5px #FCC52F inset;
