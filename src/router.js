@@ -1,5 +1,7 @@
-import React, {Component} from 'react'
-import {BrowserRouter, Routes, Route, Link, NavLink, Navigate} from 'react-router-dom'
+import React from 'react'
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import "react-toggle/style.css"
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './style/style.css'
 
 import Home from './components/home'

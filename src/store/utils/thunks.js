@@ -8,13 +8,27 @@ export const fetchLast = createAsyncThunk(
     async({},{ getState })=>{
         try{
 
-            const response = await axios.get(`${apiUrl}`);
+            const response = await axios.get('https://lemonade-p9qr.onrender.com/api/last');
 
             return {
-                items: [response.data.recenttracks.track]
+                items: [response.data.recenttracks.track[1]]
             }
         } catch(error){
             throw error;
+        }
+    }
+);
+
+export const fetchPost = createAsyncThunk(
+    '/posts/fetchPost',
+    async({}, { getState })=>{
+        try{
+            const response = await axios.get('https://lemonade-p9qr.onrender.com/api/getposts');
+            return{
+                items: [response.data]
+            }
+        } catch(error){
+            throw(error);
         }
     }
 )

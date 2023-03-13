@@ -3,7 +3,7 @@
 const Logo = () => {
     return (
         <div className='logoC'>
-            <div className='wounded'>
+            <div id="logo" className='wounded'>
                 <div className='rhombus'></div>
             </div>
         </div>
