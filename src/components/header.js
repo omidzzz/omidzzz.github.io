@@ -18,7 +18,6 @@ const Header = () => {
             document.body.classList.add('dark');
             $('.musicP').addClass('dark').removeClass('yellowBack');
             $('.navB').addClass('dark').removeClass('yNavB');
-            $('#logo').css('filter', 'grayscale(50%)')
 
         } else {
             $('body').css('filter', '')
@@ -26,7 +25,6 @@ const Header = () => {
             document.body.classList.remove('dark');
             $('.musicP').removeClass('dark').addClass('yellowBack');
             $('.navB').addClass('yNavB').removeClass('dark');
-            $('#logo').css('filter', '')
         }
 
     });
